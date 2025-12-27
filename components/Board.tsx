@@ -1,9 +1,10 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 import Point from "./Point";
+import { GameState } from "../hooks/useGameState";
 
 interface BoardProps {
-  gameState?: any;
+  gameState?: GameState;
 }
 
 export default function Board({ gameState }: BoardProps) {
