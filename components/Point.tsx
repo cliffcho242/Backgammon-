@@ -15,7 +15,7 @@ export default function Point({ pointNumber, inverted, checkers, onPress }: Poin
       <View
         style={[
           styles.triangle,
-          inverted ? styles.triangleDown : styles.triangleUp,
+          { justifyContent: inverted ? "flex-start" : "flex-end" },
           pointNumber % 2 === 0 ? styles.darkTriangle : styles.lightTriangle,
         ]}
       >
@@ -35,15 +35,8 @@ const styles = StyleSheet.create({
   triangle: {
     width: 40,
     height: 120,
-    justifyContent: inverted ? "flex-start" : "flex-end",
     alignItems: "center",
     paddingVertical: 5,
-  },
-  triangleUp: {
-    // Triangle pointing up
-  },
-  triangleDown: {
-    // Triangle pointing down
   },
   darkTriangle: {
     backgroundColor: "#654321",
