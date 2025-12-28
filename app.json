@@ -3,7 +3,8 @@
     "name": "Backgammon",
     "slug": "backgammon-app",
     "scheme": "backgammon",
-    "sdkVersion": "50.0.0",
+    "version": "1.0.0",
+    "sdkVersion": "52.0.0",
     "orientation": "landscape",
     "platforms": ["ios", "android"],
     "experiments": {
